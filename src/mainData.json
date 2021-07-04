@@ -1,0 +1,88 @@
+{
+  "menuData": {
+    "itemsLeft": [
+      {
+        "text": "PLAYDEAD",
+        "link": "/"
+      },
+      {
+        "text": "LIMBO",
+        "link": "/limbo"
+      },
+      {
+        "text": "INSIDE",
+        "link": "/inside"
+      }
+    ],
+    "itemsRight": [
+      {
+        "text": "COMPANY",
+        "link": "/company"
+      },
+      {
+        "text": "SUPPORT",
+        "link": "/support"
+      },
+      {
+        "text": "JOB",
+        "link": "/job"
+      },
+      {
+        "text": "CONTACT",
+        "link": "/contact"
+      },
+      {
+        "text": "SHOP",
+        "link": "/shop"
+      }
+    ]
+  },
+  "galleryData": [
+    {
+      "text": "Item 1",
+      "image": "https://place-hold.it/300x300/4119a8/7ded9d&text=Placeholder%20image&bold&fontsize=40"
+    },
+    {
+      "text": "Item 2",
+      "image": "https://place-hold.it/300x300/4119a8/7ded9d&text=Placeholder%20image&bold&fontsize=40"
+    },
+    {
+      "text": "Item 3",
+      "image": "https://place-hold.it/300x300/4119a8/7ded9d&text=Placeholder%20image&bold&fontsize=40"
+    }
+  ],
+  "accordionData": {
+    "exampleData": {
+      "items": [
+        {
+          "text": "Lorem ipsum dolor zet",
+          "subtext": "We dont handle the sales of the game ourselves and cant issue refunds from here. You will have to request a refund from Apple via the &lt;a href=\"https://reportaproblem.apple.com\" target=\"_blank\"&gt;Report A Problem Page&lt;/a&gt;."
+        },
+        {
+          "text": "Lorem ipsum dolor zet",
+          "subtext": "We dont handle the sales of the game ourselves and cant issue refunds from here. You will have to request a refund from Apple via the &lt;a href=\"https://reportaproblem.apple.com\" target=\"_blank\"&gt;Report A Problem Page&lt;/a&gt;."
+        },
+        {
+          "text": "Lorem ipsum dolor zet",
+          "subtext": "We dont handle the sales of the game ourselves and cant issue refunds from here. You will have to request a refund from Apple via the &lt;a href=\"https://reportaproblem.apple.com\" target=\"_blank\"&gt;Report A Problem Page&lt;/a&gt;."
+        },
+        {
+          "text": "Lorem ipsum dolor zet",
+          "subtext": "We dont handle the sales of the game ourselves and cant issue refunds from here. You will have to request a refund from Apple via the &lt;a href=\"https://reportaproblem.apple.com\" target=\"_blank\"&gt;Report A Problem Page&lt;/a&gt;."
+        },
+        {
+          "text": "Lorem ipsum dolor zet",
+          "subtext": "We dont handle the sales of the game ourselves and cant issue refunds from here. You will have to request a refund from Apple via the &lt;a href=\"https://reportaproblem.apple.com\" target=\"_blank\"&gt;Report A Problem Page&lt;/a&gt;."
+        }
+      ]
+    }
+  },
+  "games": {
+    "limbo": {
+      "title": "Limbo"
+    },
+    "inside": {
+      "title": "Inside"
+    }
+  }
+}

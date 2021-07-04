@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="content flex flex-col flex-center mx-auto border-test">
+      <Menu></Menu>
+      <transition name="page-slide">
+        <router-view></router-view>
+      </transition>
+      <DeBugger />
+    </div>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import menu from "@/components/menu";
+import DeBugger from "@/components/DeBugger";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    DeBugger: DeBugger,
+    Menu: menu,
+  },
+  data() {
+    return {};
+  },
+  created() {},
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>

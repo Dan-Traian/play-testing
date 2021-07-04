@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--bg-grey);
+}
+body {
+  background-color: var(--bg-grey);
+  color: var(--off-white);
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: var(--off-white);
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: red;
+  }
+}

@@ -1,0 +1,17 @@
+$colors: (
+  mako-grey: #404145,
+  fuel-yellow: #ecaf2d,
+  pastel-green: #5ad864,
+);
+
+@mixin color-modifiers($attribute: "color", $prefix: "-") {
+  @each $name, $hex in $colors {
+    &#{$prefix}#{$name} {
+      #{$attribute}: $hex;
+    }
+  }
+}
+
+.text {
+  @include color-modifiers($prefix: "-");
+}

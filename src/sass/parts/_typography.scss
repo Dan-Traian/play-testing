@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: PlaydeadRegular;
+  src: url("~@/assets/fonts/playdead/PLAYDEAD-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: PlaydeadText;
+  src: url("~@/assets/fonts/playdead/PLAYDEAD-Text.ttf") format("truetype");
+}
+@font-face {
+  font-family: PlaydeadDisplay;
+  src: url("~@/assets/fonts/playdead/PLAYDEAD-Display.ttf") format("truetype");
+}
+
+body,
+* {
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-family: PlaydeadText, sans-serif;
+}
+
+// top menu 26pt
+.menu-item {
+  font-size: 26pt;
+  letter-spacing: 1.3pt;
+  font-family: PlaydeadDisplay, "Oswald", sans-serif;
+}
+
+// text blocs
+.text-block {
+  font-size: 22pt;
+  font-family: PlaydeadText, "Oswald", sans-serif;
+  letter-spacing: 0.4px;
+}
+
+// boxes
+.box-text {
+  font-size: 24pt;
+  font-family: PlaydeadText, "Oswald", sans-serif;
+  letter-spacing: 0.4px;
+}
+
+// buy limbo, buy inside 26pt
+.header {
+  font-size: 26pt;
+  font-family: PlaydeadRegular, "Oswald", sans-serif;
+}
+
+// page, game titles, big 95pt
+.big-header {
+  font-size: 95pt;
+  font-family: PlaydeadDisplay, "Oswald", sans-serif;
+}
