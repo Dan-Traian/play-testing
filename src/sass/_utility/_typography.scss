@@ -1,0 +1,78 @@
+$break-small: 320px;
+$break-large: 1024px;
+$break-xl: 1920px;
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) {
+      @content;
+    }
+  } @else if $media == medium {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) {
+      @content;
+    }
+  } @else if $media == wide {
+    @media only screen and (min-width: $break-large +1) {
+      @content;
+    }
+  }
+}
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(
+          #{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} *
+            ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+        );
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
+
+// top menu 26pt
+.menu-item {
+  font-size: 26pt;
+  letter-spacing: 1.3pt;
+  font-family: PlaydeadDisplay, "Oswald", sans-serif;
+}
+
+// text blocs
+.text-block {
+  font-size: 22pt;
+  font-family: PlaydeadText, "Oswald", sans-serif;
+  letter-spacing: 0.4px;
+}
+
+// boxes
+.box-text {
+  font-size: 24pt;
+  font-family: PlaydeadText, "Oswald", sans-serif;
+  letter-spacing: 0.4px;
+}
+
+// buy limbo, buy inside 26pt
+.header {
+  font-size: 26pt;
+  font-family: PlaydeadRegular, "Oswald", sans-serif;
+}
+
+// page, game titles, big 95pt
+.big-header {
+  font-size: 95pt;
+  font-family: PlaydeadDisplay, "Oswald", sans-serif;
+}

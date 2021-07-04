@@ -1,0 +1,31 @@
+$width: (
+  "1_2": 50%,
+  "1_3": 33.33333%,
+  "2_3": 66.66667%,
+  "1_4": 25%,
+  "2_4": 50%,
+  "3_4": 75%,
+  "1_5": 20%,
+  "2_5": 40%,
+  "3_5": 60%,
+  "4_5": 80%,
+  full: 100%,
+  auto: auto,
+  screen: 100vw,
+);
+
+$heights: (
+  unit: calc(100px * 1),
+  unitx2: calc(100px * 2),
+  unitx3: calc(100px * 3),
+  full: 100%,
+  screen: 100vh,
+  auto: auto,
+);
+
+.w {
+  @include utilityGenerator($width, "width");
+}
+.h {
+  @include utilityGenerator($heights, "height");
+}

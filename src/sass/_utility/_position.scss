@@ -1,0 +1,19 @@
+/**
+* Position and alignment XY
+*/
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+/**
+* Z-axis alignment
+*/
+$zIndex: (0, 1, 2, 3, 4, 5, auto);
+
+.z {
+  @include utilityGenerator($zIndex, "z-index");
+}

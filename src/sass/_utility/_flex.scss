@@ -1,0 +1,39 @@
+$alignItems: (
+  stretch: stretch,
+  center: center,
+  start: flex-start,
+  end: flex-end,
+  baseline: baseline,
+  initial: initial,
+  inherit: inherit,
+);
+$justifyContent: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly,
+  initial: initial,
+  inherit: inherit,
+);
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.items {
+  @include utilityGenerator($alignItems, "align-items");
+}
+.justify {
+  @include utilityGenerator($alignItems, "justify-content");
+}

@@ -1,0 +1,46 @@
+@mixin utilityGenerator($map, $attribute) {
+  $base: "base";
+  @each $key, $value in $map {
+    &#{if($key != $base, -#{$key}, '')} {
+      @if type-of($value) == "map" {
+        @include utilityGenerator($value, $attribute);
+      } @else {
+        #{$attribute}: $value;
+      }
+    }
+  }
+}
+
+@mixin directionGenerator($array, $attribute) {
+  &#{""} {
+    @include utilityGenerator($array, $attribute);
+  }
+  &#{"l"} {
+    @include utilityGenerator($array, $attribute + "-left");
+  }
+  &#{"r"} {
+    @include utilityGenerator($array, $attribute + "-right");
+  }
+  &#{"t"} {
+    @include utilityGenerator($array, $attribute + "-top");
+  }
+  &#{"b"} {
+    @include utilityGenerator($array, $attribute + "-bottom");
+  }
+  &#{"x"} {
+    @each $key, $value in $array {
+      &-#{$key} {
+        #{$attribute}-left: $value;
+        #{$attribute}-right: $value;
+      }
+    }
+  }
+  &#{"y"} {
+    @each $key, $value in $array {
+      &-#{$key} {
+        #{$attribute}-top: $value;
+        #{$attribute}-bottom: $value;
+      }
+    }
+  }
+}

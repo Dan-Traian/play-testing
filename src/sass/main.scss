@@ -1,11 +1,10 @@
-@import "parts/_utils/_variables";
-@import "parts/_utils/_normalizer";
-@import "parts/_utils/_general";
-@import "parts/_utils/utils";
+@import "_starter/_variables";
+@import "_starter/_normalizer";
 
-@import "parts/abstract/layout";
-@import "parts/abstract/transitions";
-@import "parts/abstract/mixins";
-@import "parts/_typography";
+@import "_helper/helpers";
+@import "_helper/mixins";
 
-@import "parts/_components/_gallery";
+@import "_utility/utility";
+
+@import "_starter/_general";
+@import "_starter/typography";

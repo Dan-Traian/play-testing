@@ -3,7 +3,6 @@
     <h1 class="big-header color-off-white">CONTACT</h1>
   </div>
 </template>
-
 <script>
 import mainData from "./../mainData.json";
 export default {

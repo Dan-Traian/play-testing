@@ -4,14 +4,14 @@
       class="trigger w-full flex flex-center pointer"
       @click="isToggled = !isToggled"
     >
-      <p class="w-full color-off-white">{{ panelData.text }}</p>
+      <p class="text-block w-full color-off-white" v-html="panelData.text"></p>
       <ion-icon
         name="caret-down-outline"
         class="icon-holder color-off-white"
       ></ion-icon>
     </div>
     <div class="content flex flex-col">
-      <p class="box-text w-full my-2">{{ panelData.subtext }}</p>
+      <p class="text w-full my-2">{{ panelData.subtext }}</p>
     </div>
   </div>
 </template>
@@ -42,7 +42,6 @@ export default {
     padding: 18px;
     background: var(--bg-grey);
     p {
-      font-size: 18px;
       color: #b4b9be;
     }
     .icon-holder {
@@ -55,6 +54,7 @@ export default {
     border-width: 0 1px 0 1px;
     border-style: solid;
     border-color: var(--slight-border);
+    font-size: 18pt;
   }
   &.maximised {
     max-height: 500px;

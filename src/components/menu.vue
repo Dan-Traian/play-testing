@@ -39,7 +39,7 @@ nav.navigation {
   overflow-x: hidden;
   height: var(--menuHeight);
   background: var(--black);
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   .menu-item {

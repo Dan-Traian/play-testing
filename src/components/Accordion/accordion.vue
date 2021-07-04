@@ -1,5 +1,5 @@
 <template>
-  <div class="accordion w-full flex flex-col m-2 p-4">
+  <div class="accordion w-full p-4">
     <accordionPanel
       :key="index"
       v-for="(item, index) in accordionData"

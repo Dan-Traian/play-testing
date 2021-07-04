@@ -1,0 +1,15 @@
+/**
+ * Get colour
+ */
+
+@function getColor($color, $tone: "base") {
+  @return map-get(map-get($colors, $color), $tone);
+}
+
+/**
+ * Generic get from array
+ */
+
+@function getFromArray($array, $key) {
+  @return map-get($array, $key);
+}
